@@ -1,0 +1,50 @@
+html{
+    scroll-behavior:smooth;
+}
+
+h1{
+    font-size: 5em;
+    margin:0;
+    padding:0;
+    text-align:center;
+    font-family: arial;
+    position:absolute;
+    top:45%;
+    left:35%;
+
+}
+*{                                                     /*    "*"--> used to change the elements in the inside the navigation bar   */
+    margin:0;                                          /*margin used for navgation bar "only rvitm"*/
+    padding:0;                                         /* used for other navigation options*/
+    text-decoration: none;                             /*removed the default underlines in navigation bar*/
+    list-style: none;  
+    box-sizing:border-box;
+}
+nav{
+    background-color: blueviolet;                   /*used to change the clolor of the navigation bar*/
+    height:80px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+label.logo{                                                    /* label.classname--> used to address the only the logo"rvitm" */
+    color:white;                                             
+    font-size:35px;                                      
+    line-height: 80px;                                        /* used to get the logo in the center center of the navigation bar*/
+    padding:100px;                                            /* used to move the logo towards right a bit*/
+    font-weight:bold; 
+}
+nav ul{
+    float:right;
+    margin-right:20px;
+}
+nav ul li{
+    display:inline-block;
+    line-height:80px;
+    margin:0 5px;
+}
+nav ul li a{
+    color:white;
+    font-size: 17px;
+    text-transform:uppercase;
+}
