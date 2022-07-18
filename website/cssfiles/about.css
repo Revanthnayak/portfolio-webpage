@@ -1,0 +1,13 @@
+*{                                                     /*    "*"--> used to change the elements in the inside the navigation bar   */
+    margin:0;                                          /*margin used for navgation bar "only rvitm"*/
+    padding:0;                                         /* used for other navigation options*/
+    text-decoration: none;                             /*removed the default underlines in navigation bar*/
+    list-style: none;  
+    box-sizing:border-box;
+}
+nav{
+    background-color: blueviolet;                   /*used to change the clolor of the navigation bar*/
+    height:80px;
+    width: 100%;
+    justify-content: space-between;
+}
