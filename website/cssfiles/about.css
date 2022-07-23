@@ -11,3 +11,6 @@ nav{
     width: 100%;
     justify-content: space-between;
 }
+body{
+    background-color: #2C2C2C;
+}
