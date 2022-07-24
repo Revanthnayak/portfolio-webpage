@@ -14,3 +14,12 @@ nav{
 body{
     background-color: #2C2C2C;
 }
+nav ul{
+    float:right;
+    margin-right: 20px;
+}
+nav ul li{
+    display:inline-block;
+    line-height: 80px;
+    margin:0 5px;
+}
