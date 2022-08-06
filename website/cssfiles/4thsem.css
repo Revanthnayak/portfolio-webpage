@@ -28,3 +28,27 @@ nav ul li a{
 body{
     background-color: #454444;
 }
+nav ul li a:hover{
+    background-color: blueviolet;
+}
+nav ul ul{
+    
+    position: absolute;
+    top: 60px;
+    display: none;
+}
+nav ul li:hover > ul{
+    background-color: blueviolet;
+    display: block;
+}
+nav ul ul li{
+    
+    width:150px;
+    float:none;
+    display:list-item;
+    position: relative;
+}
+nav ul ul ul li{
+    
+    position: relative;
+}
