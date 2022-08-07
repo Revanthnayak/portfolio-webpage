@@ -3,6 +3,7 @@ html{
 }
 
 h1{
+    scroll-behavior: smooth;
     font-size: 5em;
     margin:0;
     padding:0;
@@ -47,4 +48,26 @@ nav ul li a{
     color:white;
     font-size: 17px;
     text-transform:uppercase;
+}
+nav ul li a:hover{                                /**/
+    background-color: blueviolet;
+}
+nav ul ul{
+    position: absolute;                                  /*sets the dropdown menu in place*/
+    top: 60px;
+    display: none;                                        /*stops displaying the cursor is placed required section*/
+}
+nav ul li:hover > ul{
+    background-color: blueviolet;                       /*sets the bacground color of dropdown menu*/
+    display: block;                                      /*used to display dropdwn menu*/
+}
+nav ul ul li{
+    
+    width:150px;
+    float:none;
+    display: list-item;
+    position: relative;
+}
+nav ul ul ul li{
+    position: relative;
 }
