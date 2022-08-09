@@ -21,6 +21,11 @@
                     <ul>
                         <li>
                             <a href="#DSA">DSA</a></li>
+                            <ul>
+                                <li>
+                                    <a href="#code">code</a>
+                                </li>
+                            </ul>
                             <li><a href="#ADE">ADE</a></li>
                     </ul></li>
                     <li><a href="4thsem.html">4TH SEM</a></li>
@@ -68,8 +73,164 @@
             </div>
             <div id="code">
                 <h1>
-                    code
-                </h1>
+                    #include<stdio.h><br>
+                        #include<string.h><br>
+                        typedef struct node<br>
+                        {<br>
+                            char name[100];<br>
+                            char busno[100];<br>
+                            int source;<br>
+                            int destination;<br>
+                            char pass[100];<br>
+                            int tax;<br>
+                            struct node *prev;<br>
+                            struct node *next;<br>
+                        }element;<br>
+                        element *head;<br>
+                        element *tail;<br>
+                        <br>
+                        void insertion()<br>
+                        {<br>
+                            element *ptr;<br>
+                            char namebus[100];<br>
+                            char bus[100];<br>
+                            int sourcebus;<br>
+                            int destinationbus;<br>
+                            char passbus[100];<br>
+                            int taxbus;<br>
+                            ptr=(element*)malloc(sizeof(element));<br>
+                            if(ptr==NULL)<br>
+                            {<br>
+                                printf("NO TICKETS AVAILABLE!!");<br>
+                                exit(0);<br>
+                            }<br>
+                            printf("Enter your name:\n");<br>
+                            scanf(" %s",namebus);<br>
+                            printf("\n\nALL BUS ROUTES ARE DISPLAYED:\n");<br>
+                            printf("BUS A - RR NAGAR TO RVITM\n");<br>
+                            printf("BUS B - ELECTRONIC CITY TO RVITM\n");<br>
+                            printf("BUS C - BANASHANKARI TO RVITM\n");<br>
+                            printf("\n\nEnter the bus route:\n");<br>
+                            scanf(" %s",&bus);<br>
+                            if(bus[0]=='a' || bus[0]=='A')<br>
+                            {<br>
+                                printf("\n\nBUS STOPS OF BUS A\n");<br>
+                                printf("1.RR NAGAR\n");<br>
+                                printf("2.UTTARAHALLI\n");<br>
+                                printf("3.VASANTHAPURA\n");<br>
+                                printf("4.KONANKUNTE CROSS\n");<br>
+                                printf("5.RVITM\n");<br>
+                            }<br>
+                            else if(bus[0]=='b' || bus[0]=='B')<br>
+                            {<br>
+                                printf("BUS STOPS OF BUS  B\n");<br>
+                                printf("1.ELECTRONIC CITY\n");<br>
+                                printf("2.MALLISANDRA CROSS\n");<br>
+                                printf("3.BASAVANAPURA GATE\n");<br>
+                                printf("4.JUMBO SAVARI DINEE\n");<br>
+                                printf("5.RVITM\n");<br>
+                            }<br>
+                            else<br>
+                            {<br>
+                                printf("BUS STOPS OF  BUS C\n");<br>
+                                printf("1.BANASHANKARI\n");<br>
+                                printf("2.SARRAKI SIGNAL\n");<br>
+                                printf("3.YELECHANAHALLI\n");<br>
+                                printf("4.KONANKUNTE CROSS\n");<br>
+                                printf("5.RVITM\n");<br>
+                            }<br>
+                            printf("\nEnter pickup point:\n");<br>
+                            scanf(" %d",&sourcebus);<br>
+                            printf("\nEnter the destination:\n");<br>
+                            scanf(" %d",&destinationbus);<br>
+                            printf("\nDo you have a pass:\n1.Yes\n2-No\n");<br>
+                            scanf("%s",&passbus);<br>
+                            taxbus=(destinationbus-sourcebus)*5;<br>
+                            ptr->tax=taxbus;<br>
+                            if(head==NULL)<br>
+                            {<br>
+                                ptr->next=NULL;<br>
+                                ptr->prev=NULL;<br>
+                                strcpy(ptr->name,namebus);<br>
+                                strcpy(ptr->busno,bus);<br>
+                                ptr->source=sourcebus;<br>
+                                ptr->destination=destinationbus;<br>
+                                strcpy(ptr->pass,passbus);<br>
+                                head=ptr;<br>
+                                tail=ptr;<br>
+                            }<br>
+                            else<br>
+                            {<br>
+                                strcpy(ptr->name,namebus);<br>
+                                strcpy(ptr->busno,bus);<br>
+                                ptr->source=sourcebus;<br>
+                                ptr->destination=destinationbus;<br>
+                                strcpy(ptr->pass,passbus);<br>
+                                ptr->prev=NULL;<br>
+                                ptr->next=head;<br>
+                                head->prev=ptr;<br>
+                                head=ptr;<br>
+                            }<br>
+                            if(passbus[0]=='1')<br>
+                                printf("\nTotal charge=0");<br>
+                            else<br>
+                                printf("\nTotal charge:%d\n",ptr->tax);<br>
+                        <br>
+                        }<br>
+                        void display()<br>
+                        {<br>
+                            element *ptr;<br>
+                            int i=1;<br>
+                            if(head==NULL)<br>
+                            {<br>
+                                printf("\nyour list is empty\n\n");<br>
+                            }<br>
+                            else<br>
+                            {<br>
+                                ptr=tail;<br>
+                                printf("\n\n The details of today's travellers are:\n");<br>
+                                while(ptr!=NULL)<br>
+                                {<br>
+                                    printf("%d. Name:%s\n",i++,ptr->name);<br>
+                                    printf("   Bus no:%s\n",ptr->busno);<br>
+                                    printf("   PICKUP POINT:%d\n",ptr->source);<br>
+                                    printf("   Destination:%d\n",ptr->destination);<br>
+                                    printf("   Pass:%s (1-Yes 2.No)\n",ptr->pass);<br>
+                                    printf("   Total charge:%d",ptr->tax);<br>
+                                    printf("\n");<br>
+                                    ptr=ptr->prev;<br>
+                                }<br>
+                            }<br>
+                        }<br>
+                        <br>
+                        int main()<br>
+                        {<br>
+                            char ch;<br>
+                            do<br>
+                            {<br>
+                                printf("\nEnter your choice for the following operations\n1.Enter details\n2.Display details\n3.exit\n\n");<br>
+                                scanf(" %c",&ch);<br>
+                                switch(ch)<br>
+                                {<br>
+                                    case '1':<br>
+                                        insertion();<br>
+                                        break;<br>
+                        <br>
+                                    case '2':<br>
+                                        display();<br>
+                                        break;<br>
+                        <br>
+                                    case'3':<br>
+                                        exit(0);<br>
+                        <br>
+                                    default:<br>
+                                        printf("Invalid choice");<br>
+                                }<br>
+                            }while(ch!=3);<br>
+                            getch();<br>
+                        <br>
+                        }  <br>
+                    
             </div>
             <div id="ADE">
                 <h1>
