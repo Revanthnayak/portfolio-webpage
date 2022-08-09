@@ -55,13 +55,66 @@ nav ul ul ul li{
 }
 #DSA{
     height: 700px;
-    background:white;
+    background: 262626px;;
     display: inline-block;
     width: 100%;
+    color: white;
+    text-align: CENTER;
+    font-size: larger;
 }
 #ADE{
     height: 700px;
     background:grey;
     display: inline-block;
     width: 100%;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.container .about{
+    background-color: royalblue;
+    width: 1200px;
+    height: 1100px;
+    margin: 30px;
+    
+}
+.aboutimage{
+    background-color: BLACK;
+    height: 60px;
+    margin-bottom: 35px; /*title from the image inside in the contatiner moves down*/
+    background-size: cover;
+    font-size: 120%;
+    text-align:center ;
+    
+    
+}
+.about a{
+    background-color: black;
+    padding: 15px 20px ;
+    display:button;
+    color:white;
+    text-align: center;
+    margin: 20px 1100px;
+}
+h3{
+    font-size: 25px;
+    font-style:normal;
+    text-align: LEFT;
+}
+h4{
+    font-size: 25px;
+    font-style:normal;
+    text-align: LEFT;
+}
+h5{
+    font-size: 25px;
+    font-style:normal;
+    text-align: LEFT;
+}
+p{
+    text-align: left;
+    margin-top: 7px;
+    margin-bottom: 20PX;
+    font-size: 20PX;
 }
