@@ -77,7 +77,7 @@ nav ul ul ul li{
     justify-content: center;
 }
 .container .about{
-    background-color: royalblue;
+    background-color: burlywood;
     width: 1200px;
     height: 620px;
     margin: 30px;
@@ -116,9 +116,41 @@ h5{
     font-style:normal;
     text-align: LEFT;
 }
+   
 p{
     text-align: left;
     margin-top: 7px;
     margin-bottom: 20PX;
     font-size: 20PX;
+}
+
+.container2 .about2{
+    background-color:indianred ;
+    width: 1200px;
+    height: 620px;
+    margin: 30px;
+    
+}
+.aboutimage2{
+    background-color: BLACK;
+    height: 60px;
+    margin-bottom: 35px; /*title from the image inside in the contatiner moves down*/
+    background-size: cover;
+    font-size: 120%;
+    text-align:center ;
+    
+    
+}
+.about2 a{
+    background-color: black;
+    padding: 15px 20px ;
+    display:button;
+    color:white;
+    text-align: center;
+    margin: 20px 300px;
+}
+h7{
+    font-size: 25px;
+    font-style:normal;
+    text-align: LEFT;
 }
