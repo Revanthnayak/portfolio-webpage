@@ -1,0 +1,83 @@
+*{                                                     /*    "*"--> used to change the elements in the inside the navigation bar   */
+    margin:0;                                          /*margin used for navgation bar "only rvitm"*/
+    padding:0;                                         /* used for other navigation options*/
+    text-decoration: none;                             /*removed the default underlines in navigation bar*/
+    list-style: none;  
+    box-sizing:border-box;
+}
+nav{
+    background-color: blueviolet;                   /*used to change the clolor of the navigation bar*/
+    height:80px;
+    width: 100%;
+    justify-content: space-between;
+}
+body{
+    background-color: rgb(180, 176, 176);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+nav ul{
+    float:right;
+    margin-right: 20px;
+}
+nav ul li{
+    display:inline-block;
+    line-height: 80px;
+    margin:0 5px;
+}
+nav ul li a:hover{
+    background-color: blueviolet;
+}
+nav ul ul{
+    
+    position: absolute;
+    top: 60px;
+    display: none;
+}
+nav ul li:hover > ul{
+    background-color: rgb(217, 211, 221);
+    display: block;
+}
+nav ul ul li{
+    
+    width:150px;
+    float:none;
+    display:list-item;
+    position: relative;
+    margin:50px;
+}
+nav ul ul ul li{
+    
+    position: relative;
+}
+
+
+/*container css*/
+
+.container{
+    background-color: rgb(180, 176, 176);;
+    border:5px solid rgb(64,6,119);
+    padding: 30px;
+    padding-top: 20px;
+    width: 360px;
+    height: 580px;
+    margin-left:80px;
+    margin-top: 40px;
+}
+.container h1{
+    padding: 30px;
+    text-align: center;
+}
+.container a{
+    display: block;
+    height: 40px;
+    width: 250px;
+    background: linear-gradient(#9365ff,#6f3bff);/*linear gradient used mix the color like oil pastel coloring*/;
+    color:white;
+    padding:10px;
+    border:2px solid black; 
+    margin:20px;
+    text-align:center;
+
+}
