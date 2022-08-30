@@ -4,17 +4,29 @@ html{
 
 h1{
     scroll-behavior: smooth;
-    font-size: 5em;
+    font-size: 120px;
     margin:0;
     padding:0;
+    padding-right: 500px;
     text-align:center;
     font-family: arial;
     position:absolute;
     top:45%;
     left:35%;
-
+    color: transparent;
+    -webkit-text-stroke:1px #fff;
+    background: url(html/images/back.png);
+    -webkit-background-clip:text;
+    background-position:0 0;
+    animation: back 15s linear infinite;
 }
-*{                                                     /*    "*"--> used to change the elements in the inside the navigation bar   */
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+*
+{                                                     /*    "*"--> used to change the elements in the inside the navigation bar   */
     margin:0;                                          /*margin used for navgation bar "only rvitm"*/
     padding:0;                                         /* used for other navigation options*/
     text-decoration: none;                             /*removed the default underlines in navigation bar*/
