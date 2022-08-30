@@ -79,5 +79,9 @@ nav ul ul ul li{
     border:2px solid black; 
     margin:20px;
     text-align:center;
-
+    position: relative;
+}
+.container a:hover{
+    color: black;
+    transition: 0.5s;
 }
