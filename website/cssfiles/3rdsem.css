@@ -10,6 +10,7 @@ nav{
     height: 80px;
     width:100%;
     justify-content: space-between;
+
 }
 nav ul{
     float:right;
@@ -132,7 +133,9 @@ p{
     
 }
 .aboutimage2{
-    background-color: BLACK;
+
+    color:white;
+    background-color:black;
     height: 60px;
     margin-bottom: 35px; /*title from the image inside in the contatiner moves down*/
     background-size: cover;
@@ -142,7 +145,7 @@ p{
     
 }
 .about2 a{
-    background-color: black;
+    background-color:black; /* downlaod button color*/
     padding: 15px 20px ;
     display:button;
     color:white;

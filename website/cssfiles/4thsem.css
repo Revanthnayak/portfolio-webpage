@@ -52,3 +52,24 @@ nav ul ul ul li{
     
     position: relative;
 }
+
+
+/* INSIDE CONTENT CSS*/
+div.textcontainer{
+    position: absolute; /* border is fitted in the size the text*/
+    border: 3px solid white;
+    top:250px;
+    left:60px;
+    font-size:xx-large;
+    color:#df4576 ;
+}
+
+div.index{
+    position: absolute; /* border is fitted in the size the text*/
+    border: 3px solid white;
+    top:250px;
+    left:560px;
+    font-size:xx-large;
+    color:#df4576 ;
+}
+}
